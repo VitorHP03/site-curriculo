@@ -1,0 +1,383 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #ffffff;
+}
+
+body {
+  background-color: rgb(20, 20, 20);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/*HEADER / CABEÇALHO*/
+header {
+  width: calc(100% - 20px);
+  margin: 10px;
+  background-color: rgb(6, 0, 16);
+  min-height: 300px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#foto {
+  width: 25%;
+  height: 100%;
+  min-height: 250px;
+  display: grid;
+  place-items: center;
+  border-right: 1px solid whitesmoke;
+}
+
+#imagem {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+#nome {
+  width: 25%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+#nome ul {
+  list-style: none;
+  line-height: 1.6;
+}
+
+#contato {
+  width: 50%;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+}
+
+#bloco {
+  border: 1px solid whitesmoke;
+  border-radius: 20px;
+  width: 80%;
+  max-width: 350px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+#barra {
+  border: 1px solid whitesmoke;
+  border-radius: 10px;
+  padding: 5px;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icones {
+  height: 24px;
+  width: auto;
+  transition: transform 300ms ease;
+}
+
+.icones:hover {
+  cursor: pointer;
+  transform: translateY(-3px);
+}
+
+/*CURSOS & DIPLOMAS*/
+#diploma {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(6, 0, 16);
+  width: calc(100% - 20px);
+  min-height: 80px;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.cursos {
+  width: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 10px;
+}
+
+/*SOBRE MIM & TECNOLOGIAS*/
+#titulo-sobre {
+  text-align: center;
+  padding: 20px 10px 10px;
+}
+
+#sobre {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
+  font-size: 0.9rem;
+  gap: 15px;
+}
+
+.textos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  width: calc(33.33% - 20px);
+  min-width: 260px;
+  border-radius: 20px;
+  padding: 20px;
+  border: 2px solid rgb(65, 0, 126);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  transition:
+    transform 300ms ease,
+    background-color 300ms ease,
+    box-shadow 300ms ease;
+}
+
+.textos:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  background-color: rgba(65, 0, 126, 0.25);
+}
+
+#estudo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 20px);
+  margin: 10px;
+}
+
+#linguagem {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 15px 25px;
+  width: 100%;
+  max-width: 900px;
+  border-radius: 20px;
+  border: 2px solid rgb(65, 0, 126);
+  list-style: none;
+  transition:
+    transform 300ms ease,
+    background-color 300ms ease;
+}
+
+#linguagem:hover {
+  transform: translateY(-3px);
+  background-color: rgba(65, 0, 126, 0.25);
+}
+
+/*PROJETO VÍDEO*/
+#trabalho {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 10px;
+  gap: 15px;
+  min-height: 400px;
+}
+
+#video {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.laterais {
+  display: grid;
+  place-items: center;
+  width: 10%;
+  height: 100%;
+}
+
+.seta {
+  cursor: pointer;
+  width: 24px;
+  height: auto;
+  transition: transform 300ms ease;
+}
+
+.seta:hover {
+  transform: translateY(-5px);
+}
+
+#centro {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#play {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#midia {
+  width: 100%;
+  max-width: 500px;
+  height: 280px;
+  border-radius: 15px;
+  border: none;
+}
+
+#partes {
+  padding-top: 10px;
+  text-align: center;
+}
+
+#explicacao {
+  background-color: rgb(6, 0, 16);
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.8);
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+}
+
+/*CERTIFICADOS*/
+#final {
+  text-align: center;
+  padding: 20px 10px 40px;
+}
+
+#competencias {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.certificados {
+  min-width: 200px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1px solid whitesmoke;
+  text-decoration: none;
+  transition:
+    transform 300ms ease,
+    background-color 300ms ease;
+}
+
+.certificados:hover {
+  transform: translateY(-3px);
+  background-color: rgba(65, 0, 126, 0.25);
+}
+
+.laco {
+  width: 25px;
+  height: auto;
+  filter: brightness(0) invert(1);
+}
+
+/*RODAPÉ (FOOTER)*/
+footer {
+  background-color: black;
+  text-align: center;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 0.85rem;
+}
+
+/*RESPONSIVIDADE (MOBILE)*/
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  #foto {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid whitesmoke;
+    padding-bottom: 15px;
+  }
+
+  #nome {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #contato {
+    width: 100%;
+  }
+
+  #bloco {
+    width: 100%;
+  }
+
+  #diploma {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .cursos {
+    width: 100%;
+  }
+
+  .textos {
+    width: 100%;
+  }
+
+  #trabalho {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  #midia {
+    height: 200px;
+  }
+
+  .certificados {
+    width: 100%;
+    max-width: 280px;
+  }
+}
